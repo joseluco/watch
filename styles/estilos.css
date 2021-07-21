@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body*/
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px 50px;
+    background-color: #ffebcd;
+}
+
+/*Header*/
+header {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+/*main*/
+main {
+    display: flex;
+    text-align: center;
+}
+
+/*Reloj*/
+
+.clock {
+    width: 600px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(202, 202, 202);
+    color: #2a7e2a;
+    border: 5px solid #000000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(99, 98, 98, 0.164);
+}
+
+.hms {
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.ampm {
+    font-size: 40px;
+}
+
+.calendario {
+    display: inline-block;
+    font-size: 30px;
+}
