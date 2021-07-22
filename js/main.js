@@ -8,7 +8,7 @@ function relojTiempo() {
         /* al asignar valor a la variable uso operador ternario par evitar un if posterior y ahorrar linea de codigo para especificar los minutos y segudos de 0-9 y no pierda el estilo por faltar un numero
         en let hora 
         */
-    let hora = tiempo.getHours()
+    let hora = (tiempo.getHours() < 10) ? `0${tiempo.getHours()}`: tiempo.getHours()
     let minuto = (tiempo.getMinutes() < 10) ? `0${tiempo.getMinutes()}` : tiempo.getMinutes()
     let segundo = (tiempo.getSeconds() < 10) ? `0${tiempo.getSeconds()}` : tiempo.getSeconds()
     let ampm = (hora >= 12) ? "PM" : "AM"
@@ -17,12 +17,13 @@ function relojTiempo() {
     si son las 00 (12 de la noche) reemplaza a 12am.
     de horario PM resta 12 para dar la hora en numero hasta 12
     */
+
     if (hora == 0) {
     hora = 12
     } else if (hora > 12) {
-    hora = `0${hora - 12}`
+    hora = hora - 12
     } else {
-    hora = `0${hora}`
+    hora = hora
     }
     
     // hora completa formada
