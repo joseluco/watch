@@ -1,8 +1,26 @@
+/* responsive*/
+@media only screen and (max-width: 600px){
+    .clock {
+        width: 400px;
+        margin: 5px 0;
+    }
+    .hms {
+        font-size: 30px;
+    }
+    .ampm {
+        font-size: 10px;
+    }
+    .calendario {
+        font-size: 20px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 /*Body*/
 body {
